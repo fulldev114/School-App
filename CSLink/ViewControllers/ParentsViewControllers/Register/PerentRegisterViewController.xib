@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PerentRegisterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gWt-9H-Tuj">
+                    <rect key="frame" x="201" y="95" width="240" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="1D7-SD-Fit"/>
+                        <constraint firstAttribute="height" constant="113" id="D3z-RP-Kja"/>
+                        <constraint firstAttribute="height" constant="50" id="UMZ-N5-6Uc"/>
+                        <constraint firstAttribute="width" constant="240" id="fk2-nn-sf0"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1D7-SD-Fit"/>
+                            <exclude reference="D3z-RP-Kja"/>
+                            <exclude reference="UMZ-N5-6Uc"/>
+                            <exclude reference="fk2-nn-sf0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="UMZ-N5-6Uc"/>
+                            <include reference="fk2-nn-sf0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="1D7-SD-Fit"/>
+                            <include reference="D3z-RP-Kja"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gWt-9H-Tuj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="61" id="48U-WI-WjY"/>
+                <constraint firstItem="gWt-9H-Tuj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qif-QG-W65"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="48U-WI-WjY"/>
+                    <exclude reference="Qif-QG-W65"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="48U-WI-WjY"/>
+                    <include reference="Qif-QG-W65"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="ReportTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="odn-mZ-W0O">
+                        <rect key="frame" x="8" y="8" width="34" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="74t-4j-yqO">
+                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="35" id="IwS-oT-38M">
+                                <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P83-u6-vUu">
+                        <rect key="frame" x="50" y="8" width="262" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gH-Hu-0VW">
+                        <rect key="frame" x="50" y="62" width="262" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d1g-oR-vN0"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xp-ct-K1Y">
+                        <rect key="frame" x="50" y="39" width="262" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="e8q-GO-m3G"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="odn-mZ-W0O" secondAttribute="leading" id="01r-kO-5Sp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0gH-Hu-0VW" secondAttribute="bottom" id="9x0-pL-Sz3"/>
+                    <constraint firstItem="P83-u6-vUu" firstAttribute="leading" secondItem="odn-mZ-W0O" secondAttribute="trailing" constant="8" id="KhO-27-Fvc">
+                        <variation key="heightClass=regular-widthClass=regular" constant="12"/>
+                    </constraint>
+                    <constraint firstAttribute="bottomMargin" secondItem="0gH-Hu-0VW" secondAttribute="bottom" id="Mqt-OF-aWr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0gH-Hu-0VW" secondAttribute="bottom" constant="3" id="PD4-uz-oty"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="P83-u6-vUu" secondAttribute="trailing" id="SfO-Os-ibH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5xp-ct-K1Y" secondAttribute="trailing" id="T9Z-EK-atl"/>
+                    <constraint firstAttribute="topMargin" secondItem="odn-mZ-W0O" secondAttribute="top" id="Vgl-0n-Xcr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0gH-Hu-0VW" secondAttribute="trailing" id="WpD-HM-27S"/>
+                    <constraint firstItem="0gH-Hu-0VW" firstAttribute="top" secondItem="5xp-ct-K1Y" secondAttribute="bottom" constant="5" id="hSR-Ho-a1K">
+                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                    </constraint>
+                    <constraint firstItem="5xp-ct-K1Y" firstAttribute="leading" secondItem="P83-u6-vUu" secondAttribute="leading" id="lC8-P4-Bea"/>
+                    <constraint firstAttribute="topMargin" secondItem="P83-u6-vUu" secondAttribute="top" id="u2Y-o9-KT2"/>
+                    <constraint firstItem="5xp-ct-K1Y" firstAttribute="top" secondItem="P83-u6-vUu" secondAttribute="bottom" constant="6" id="y6z-vO-rgc"/>
+                    <constraint firstItem="0gH-Hu-0VW" firstAttribute="leading" secondItem="P83-u6-vUu" secondAttribute="leading" id="yvs-Ri-42v"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Mqt-OF-aWr"/>
+                        <exclude reference="PD4-uz-oty"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnViewReport" destination="5xp-ct-K1Y" id="WgP-Z9-Aci"/>
+                <outlet property="lblStudantName" destination="P83-u6-vUu" id="f1F-Ic-2Nb"/>
+                <outlet property="profileImg" destination="odn-mZ-W0O" id="jYC-fx-iD3"/>
+                <outlet property="seperatorView" destination="0gH-Hu-0VW" id="FTE-lX-qMa"/>
+            </connections>
+            <point key="canvasLocation" x="310" y="205.5"/>
+        </tableViewCell>
+    </objects>
+</document>

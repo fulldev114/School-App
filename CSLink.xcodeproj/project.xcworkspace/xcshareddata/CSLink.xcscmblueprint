@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "43367c39-dd9c-4cee-9b23-498c735fd652",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "43367c39-dd9c-4cee-9b23-498c735fd652" : {
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "43367c39-dd9c-4cee-9b23-498c735fd652" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C9E8FC4B-C7C0-4D00-BF04-B1816CD4465C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "43367c39-dd9c-4cee-9b23-498c735fd652" : "CSLink\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CSLink",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/source\/CSLink.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.253:18080\/svn\/cslink_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43367c39-dd9c-4cee-9b23-498c735fd652"
+    }
+  ]
+}

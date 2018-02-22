@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "c8f11860-422d-4db6-893c-be45bce8f373",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c8f11860-422d-4db6-893c-be45bce8f373" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c8f11860-422d-4db6-893c-be45bce8f373" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B32E5FDD-480E-4A5E-9F44-F532A0A234E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c8f11860-422d-4db6-893c-be45bce8f373" : "IOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Onjyb",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Onjyb\/Onjyb\/Onjyb.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.253:18080\/svn\/beacon_manager_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c8f11860-422d-4db6-893c-be45bce8f373"
+    }
+  ]
+}

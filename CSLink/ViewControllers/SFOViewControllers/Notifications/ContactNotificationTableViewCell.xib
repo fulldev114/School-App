@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ContactNotificationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a staff member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-j8-Chd">
+                        <rect key="frame" x="74" y="35" width="116.5" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="S5a-Ht-coY">
+                        <rect key="frame" x="15" y="10" width="49.5" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="1:1" id="i3M-Sg-T56"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carron" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJA-dm-ZG3">
+                        <rect key="frame" x="74.5" y="10" width="49.5" height="25"/>
+                        <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.63137254899999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(1A) Not Arrived" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65T-HG-0On">
+                        <rect key="frame" x="134" y="12" width="166" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-cU-7XV">
+                        <rect key="frame" x="74.5" y="72.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="mgj-Sa-0iO"/>
+                            <constraint firstAttribute="height" constant="24" id="x7W-dF-lXI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Minutes Ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-Xa-Jqb">
+                        <rect key="frame" x="98" y="74" width="115" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.99675649399999999" green="0.95843118429999996" blue="0.85829323530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="dcy-j8-Chd" firstAttribute="height" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="0.5" id="3zm-EZ-0kC"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="leading" secondItem="S5a-Ht-coY" secondAttribute="trailing" constant="10" id="5h6-WG-VwJ"/>
+                    <constraint firstItem="R3k-cU-7XV" firstAttribute="centerY" secondItem="gfg-Xa-Jqb" secondAttribute="centerY" id="CPb-H2-hIe"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="height" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="0.5" id="CWV-Jj-bhh"/>
+                    <constraint firstItem="R3k-cU-7XV" firstAttribute="leading" secondItem="sJA-dm-ZG3" secondAttribute="leading" id="NtK-T7-O0R"/>
+                    <constraint firstAttribute="trailing" secondItem="65T-HG-0On" secondAttribute="trailing" constant="20" id="Ph6-hn-AKx"/>
+                    <constraint firstItem="65T-HG-0On" firstAttribute="centerY" secondItem="sJA-dm-ZG3" secondAttribute="centerY" id="Tkb-SS-ysR"/>
+                    <constraint firstItem="S5a-Ht-coY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ump-T8-c38"/>
+                    <constraint firstAttribute="bottom" secondItem="S5a-Ht-coY" secondAttribute="bottom" constant="45" id="X47-Dk-MQK"/>
+                    <constraint firstItem="65T-HG-0On" firstAttribute="leading" secondItem="sJA-dm-ZG3" secondAttribute="trailing" constant="10" id="cBW-57-ma3"/>
+                    <constraint firstItem="S5a-Ht-coY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fE0-0y-TL6"/>
+                    <constraint firstAttribute="bottom" secondItem="gfg-Xa-Jqb" secondAttribute="bottom" constant="10" id="mz8-5G-BH9"/>
+                    <constraint firstItem="gfg-Xa-Jqb" firstAttribute="leading" secondItem="R3k-cU-7XV" secondAttribute="trailing" id="oIb-k8-LZQ"/>
+                    <constraint firstItem="dcy-j8-Chd" firstAttribute="bottom" secondItem="S5a-Ht-coY" secondAttribute="bottom" id="qhK-Hb-o5g"/>
+                    <constraint firstItem="dcy-j8-Chd" firstAttribute="leading" secondItem="R3k-cU-7XV" secondAttribute="leading" id="zRj-cf-CoQ"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="top" secondItem="S5a-Ht-coY" secondAttribute="top" id="zXP-tL-N91"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clockImageView" destination="R3k-cU-7XV" id="Dd9-6K-Zv1"/>
+                <outlet property="memeberLabel" destination="dcy-j8-Chd" id="3QZ-Wl-uzx"/>
+                <outlet property="nameLabel" destination="sJA-dm-ZG3" id="pq5-fW-UYm"/>
+                <outlet property="profileImageView" destination="S5a-Ht-coY" id="woi-Vi-p5l"/>
+                <outlet property="statusLabel" destination="65T-HG-0On" id="ta3-1R-xYY"/>
+                <outlet property="timeLabel" destination="gfg-Xa-Jqb" id="Pu9-Qp-gKn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock" width="15" height="15"/>
+        <image name="profile.png" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelecteGroupForEmgViewController">
+            <connections>
+                <outlet property="btnCencel" destination="2su-nN-vaH" id="fQw-N5-eHF"/>
+                <outlet property="btnSelecteAllGroup" destination="31M-cr-sNk" id="r9B-6I-SWT"/>
+                <outlet property="btnSend" destination="T4S-xA-1ys" id="F06-0P-1A6"/>
+                <outlet property="lblOr" destination="fAd-Ll-ogF" id="LKS-Ax-MeZ"/>
+                <outlet property="seperateView1" destination="a3U-xJ-7Bc" id="R74-VQ-Pez"/>
+                <outlet property="seperateView2" destination="8cQ-Eb-7mD" id="GzK-za-h8h"/>
+                <outlet property="tblGroupList" destination="zfg-iH-Rm7" id="0vb-lf-H0U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31M-cr-sNk">
+                    <rect key="frame" x="10" y="80" width="184" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="2rM-cv-6tV"/>
+                    </constraints>
+                    <state key="normal" image="unchecked.png"/>
+                    <state key="selected" image="check-green.png"/>
+                    <state key="highlighted" image="check-green.png"/>
+                    <connections>
+                        <action selector="btnSelecteAlllGroupPress:" destination="-1" eventType="touchUpInside" id="20c-pe-Irg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-xJ-7Bc">
+                    <rect key="frame" x="10" y="132" width="150" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="q3R-vZ-BXU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAd-Ll-ogF">
+                    <rect key="frame" x="166" y="123" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cQ-Eb-7mD">
+                    <rect key="frame" x="216" y="132" width="149" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="F6f-Z8-c7i"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4S-xA-1ys">
+                    <rect key="frame" x="14" y="607" width="169" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnSendPress:" destination="-1" eventType="touchUpInside" id="RRj-GQ-hpg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2su-nN-vaH">
+                    <rect key="frame" x="190" y="607" width="169" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnCancelPress:" destination="-1" eventType="touchUpInside" id="Bf8-WK-vfe"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zfg-iH-Rm7" customClass="SLExpandableTableView">
+                    <rect key="frame" x="0.0" y="152" width="375" height="447"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xme-2K-Tfn"/>
+                        <outlet property="delegate" destination="-1" id="pWb-5p-o6S"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.73905412388322245" blue="0.41240538537716442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="31M-cr-sNk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="16d-rI-UMT"/>
+                <constraint firstItem="31M-cr-sNk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4gc-Lk-cSo"/>
+                <constraint firstAttribute="bottom" secondItem="T4S-xA-1ys" secondAttribute="bottom" constant="20" id="61k-Pp-VQI"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="81T-xP-tyu"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.06" id="86Y-he-HMm"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="height" secondItem="2su-nN-vaH" secondAttribute="height" id="9C5-ph-upn"/>
+                <constraint firstAttribute="bottom" secondItem="2su-nN-vaH" secondAttribute="bottom" constant="20" id="E1N-Cn-1o1"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="top" secondItem="zfg-iH-Rm7" secondAttribute="bottom" constant="8" id="E6A-Yl-99V"/>
+                <constraint firstItem="a3U-xJ-7Bc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ECi-JO-VKK"/>
+                <constraint firstItem="zfg-iH-Rm7" firstAttribute="top" secondItem="fAd-Ll-ogF" secondAttribute="bottom" constant="8" id="Fhq-WA-RuO"/>
+                <constraint firstItem="fAd-Ll-ogF" firstAttribute="leading" secondItem="a3U-xJ-7Bc" secondAttribute="trailing" constant="6" id="QMB-Nz-FML"/>
+                <constraint firstItem="8cQ-Eb-7mD" firstAttribute="top" secondItem="31M-cr-sNk" secondAttribute="bottom" constant="30" id="UtI-6G-Zdo"/>
+                <constraint firstAttribute="trailing" secondItem="2su-nN-vaH" secondAttribute="trailing" constant="16" id="Uvh-OK-4vk"/>
+                <constraint firstAttribute="trailing" secondItem="8cQ-Eb-7mD" secondAttribute="trailing" constant="10" id="Ycr-nH-34d"/>
+                <constraint firstAttribute="trailing" secondItem="zfg-iH-Rm7" secondAttribute="trailing" id="ZuS-Zv-bs2"/>
+                <constraint firstItem="fAd-Ll-ogF" firstAttribute="top" secondItem="31M-cr-sNk" secondAttribute="bottom" constant="21" id="bzM-k3-3hf"/>
+                <constraint firstItem="zfg-iH-Rm7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gbn-H6-4PV"/>
+                <constraint firstItem="fAd-Ll-ogF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jW1-nV-4la"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="width" secondItem="2su-nN-vaH" secondAttribute="width" id="orM-5h-ASZ"/>
+                <constraint firstItem="a3U-xJ-7Bc" firstAttribute="top" secondItem="31M-cr-sNk" secondAttribute="bottom" constant="30" id="pc3-Kx-0ri"/>
+                <constraint firstItem="T4S-xA-1ys" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.45" id="wbX-uX-zo0"/>
+                <constraint firstItem="8cQ-Eb-7mD" firstAttribute="leading" secondItem="fAd-Ll-ogF" secondAttribute="trailing" constant="8" id="zUr-Dq-avs"/>
+            </constraints>
+            <point key="canvasLocation" x="-174" y="-301"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check-green.png" width="20" height="20"/>
+        <image name="unchecked.png" width="20" height="20"/>
+    </resources>
+</document>

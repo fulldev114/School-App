@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AbsentNoticeListViewController">
+            <connections>
+                <outlet property="tblAbsentList" destination="Iox-Cb-Rrb" id="MEz-VG-eui"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Iox-Cb-Rrb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1ZR-Qe-7ro"/>
+                        <outlet property="delegate" destination="-1" id="ufJ-xR-hry"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Iox-Cb-Rrb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4cr-UN-CEN"/>
+                <constraint firstItem="Iox-Cb-Rrb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JzY-lr-b9G"/>
+                <constraint firstItem="Iox-Cb-Rrb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KUe-jN-HR4"/>
+                <constraint firstAttribute="trailing" secondItem="Iox-Cb-Rrb" secondAttribute="trailing" id="S2q-df-QFp"/>
+                <constraint firstAttribute="bottom" secondItem="Iox-Cb-Rrb" secondAttribute="bottom" id="Yab-bo-CLa"/>
+                <constraint firstAttribute="trailing" secondItem="Iox-Cb-Rrb" secondAttribute="trailing" id="cP4-9D-Z0J"/>
+                <constraint firstAttribute="bottom" secondItem="Iox-Cb-Rrb" secondAttribute="bottom" id="hyY-7r-JD0"/>
+                <constraint firstItem="Iox-Cb-Rrb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xcd-5c-Wk1"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4cr-UN-CEN"/>
+                    <exclude reference="JzY-lr-b9G"/>
+                    <exclude reference="KUe-jN-HR4"/>
+                    <exclude reference="S2q-df-QFp"/>
+                    <exclude reference="Yab-bo-CLa"/>
+                    <exclude reference="cP4-9D-Z0J"/>
+                    <exclude reference="hyY-7r-JD0"/>
+                    <exclude reference="xcd-5c-Wk1"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="4cr-UN-CEN"/>
+                    <include reference="JzY-lr-b9G"/>
+                    <include reference="S2q-df-QFp"/>
+                    <include reference="hyY-7r-JD0"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="KUe-jN-HR4"/>
+                    <include reference="Yab-bo-CLa"/>
+                    <include reference="cP4-9D-Z0J"/>
+                    <include reference="xcd-5c-Wk1"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="350" y="336"/>
+        </view>
+    </objects>
+</document>

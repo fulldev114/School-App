@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="CommanTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVJ-Y7-vDT">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9i1-Yh-JH2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                            <constraint firstAttribute="height" constant="40" id="gzY-sZ-fhJ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eG-Q4-CDK">
+                        <rect key="frame" x="56" y="8" width="265" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ya-ZW-Iht">
+                        <rect key="frame" x="56" y="34" width="238" height="26"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVj-3V-ou7">
+                        <rect key="frame" x="56" y="70" width="305" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lhF-nq-2jZ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNj-Mb-8Z4" customClass="MIBadgeButton">
+                        <rect key="frame" x="304" y="35" width="27" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="3qb-eq-nRO"/>
+                            <constraint firstAttribute="height" constant="25" id="zdM-Sl-WDz"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="1eG-Q4-CDK" secondAttribute="trailing" id="6uK-3k-xaz"/>
+                    <constraint firstItem="EVj-3V-ou7" firstAttribute="top" secondItem="0ya-ZW-Iht" secondAttribute="bottom" constant="10" id="ATC-nt-fq6">
+                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                    </constraint>
+                    <constraint firstItem="EVj-3V-ou7" firstAttribute="leading" secondItem="0ya-ZW-Iht" secondAttribute="leading" id="BTm-na-lau"/>
+                    <constraint firstAttribute="topMargin" secondItem="1eG-Q4-CDK" secondAttribute="top" id="CCR-OF-TpC"/>
+                    <constraint firstItem="kNj-Mb-8Z4" firstAttribute="top" secondItem="1eG-Q4-CDK" secondAttribute="bottom" id="Hh1-4m-Qf3"/>
+                    <constraint firstItem="kNj-Mb-8Z4" firstAttribute="leading" secondItem="0ya-ZW-Iht" secondAttribute="trailing" constant="10" id="Uvg-OJ-OPu"/>
+                    <constraint firstItem="EVj-3V-ou7" firstAttribute="top" secondItem="kNj-Mb-8Z4" secondAttribute="bottom" constant="10" id="Zei-73-3hj">
+                        <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                    </constraint>
+                    <constraint firstAttribute="leadingMargin" secondItem="QVJ-Y7-vDT" secondAttribute="leading" id="fIC-WV-Vga"/>
+                    <constraint firstItem="1eG-Q4-CDK" firstAttribute="leading" secondItem="QVJ-Y7-vDT" secondAttribute="trailing" constant="8" id="gTo-Zr-q6l">
+                        <variation key="heightClass=regular-widthClass=regular" constant="12"/>
+                    </constraint>
+                    <constraint firstAttribute="trailingMargin" secondItem="EVj-3V-ou7" secondAttribute="trailing" constant="-40" id="hhP-qT-ded"/>
+                    <constraint firstItem="0ya-ZW-Iht" firstAttribute="top" secondItem="1eG-Q4-CDK" secondAttribute="bottom" id="iZy-HS-GLt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EVj-3V-ou7" secondAttribute="bottom" id="lWT-oE-VuZ"/>
+                    <constraint firstItem="0ya-ZW-Iht" firstAttribute="leading" secondItem="1eG-Q4-CDK" secondAttribute="leading" id="thO-0H-Uwa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kNj-Mb-8Z4" secondAttribute="trailing" constant="-10" id="uHw-Jl-SYm"/>
+                    <constraint firstItem="QVJ-Y7-vDT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="wld-Ml-J62"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Hh1-4m-Qf3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnBadge" destination="kNj-Mb-8Z4" id="ESE-g8-Lt9"/>
+                <outlet property="imgUser" destination="QVJ-Y7-vDT" id="R9L-uY-L24"/>
+                <outlet property="lblClassName" destination="0ya-ZW-Iht" id="H1l-Tb-NjS"/>
+                <outlet property="lblStudantName" destination="1eG-Q4-CDK" id="U3i-YC-BoN"/>
+                <outlet property="seperator" destination="EVj-3V-ou7" id="mcf-v2-lfi"/>
+            </connections>
+            <point key="canvasLocation" x="407.5" y="205"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ItemTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="S5a-Ht-coY">
+                        <rect key="frame" x="15" y="10" width="49.5" height="49.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="1:1" id="i3M-Sg-T56"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carron" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJA-dm-ZG3">
+                        <rect key="frame" x="74.5" y="10" width="49.5" height="25"/>
+                        <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
+                        <color key="textColor" red="0.99607843139999996" green="0.63137254899999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(1A)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65T-HG-0On">
+                        <rect key="frame" x="134" y="12" width="166" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Parents (17:00)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-Xa-Jqb">
+                        <rect key="frame" x="74.5" y="35" width="140" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gfg-Xa-Jqb" firstAttribute="height" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="0.5" id="0W5-qM-fLv"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="leading" secondItem="S5a-Ht-coY" secondAttribute="trailing" constant="10" id="5h6-WG-VwJ"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="height" secondItem="S5a-Ht-coY" secondAttribute="height" multiplier="0.5" id="91A-92-5Jb"/>
+                    <constraint firstAttribute="trailing" secondItem="65T-HG-0On" secondAttribute="trailing" constant="20" id="Ph6-hn-AKx"/>
+                    <constraint firstItem="65T-HG-0On" firstAttribute="centerY" secondItem="sJA-dm-ZG3" secondAttribute="centerY" id="Tkb-SS-ysR"/>
+                    <constraint firstItem="S5a-Ht-coY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ump-T8-c38"/>
+                    <constraint firstItem="gfg-Xa-Jqb" firstAttribute="bottom" secondItem="S5a-Ht-coY" secondAttribute="bottom" id="Wqd-61-dEG"/>
+                    <constraint firstAttribute="bottom" secondItem="S5a-Ht-coY" secondAttribute="bottom" constant="10" id="X47-Dk-MQK"/>
+                    <constraint firstItem="65T-HG-0On" firstAttribute="leading" secondItem="sJA-dm-ZG3" secondAttribute="trailing" constant="10" id="cBW-57-ma3"/>
+                    <constraint firstItem="S5a-Ht-coY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fE0-0y-TL6"/>
+                    <constraint firstItem="gfg-Xa-Jqb" firstAttribute="leading" secondItem="sJA-dm-ZG3" secondAttribute="leading" id="hIh-wo-ZcM"/>
+                    <constraint firstItem="sJA-dm-ZG3" firstAttribute="top" secondItem="S5a-Ht-coY" secondAttribute="top" id="zXP-tL-N91"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classLabel" destination="65T-HG-0On" id="WjD-EN-l9f"/>
+                <outlet property="detailLabel" destination="gfg-Xa-Jqb" id="kPo-b5-jLR"/>
+                <outlet property="nameLabel" destination="sJA-dm-ZG3" id="pq5-fW-UYm"/>
+                <outlet property="profileImageView" destination="S5a-Ht-coY" id="woi-Vi-p5l"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile.png" width="150" height="150"/>
+    </resources>
+</document>

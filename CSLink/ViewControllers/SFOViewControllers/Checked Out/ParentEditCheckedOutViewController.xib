@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParentEditCheckedOutViewController">
+            <connections>
+                <outlet property="btnCancel" destination="saP-PY-Ew7" id="RLH-Aq-Eyo"/>
+                <outlet property="btnSave" destination="Bcl-tJ-IdR" id="d7a-ul-fGv"/>
+                <outlet property="constBtnCancelRight" destination="iDV-ae-08W" id="ba1-DU-CFq"/>
+                <outlet property="constBtnSaveLeft" destination="mlD-oW-z33" id="BMo-DY-yXU"/>
+                <outlet property="datePicker" destination="O6S-11-vG6" id="PJH-Ws-wNh"/>
+                <outlet property="datePickerView" destination="qAL-Tt-Gxp" id="ID6-aW-gpj"/>
+                <outlet property="studentTableView" destination="bcA-5T-uqU" id="Vf7-Wf-Jwp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bcA-5T-uqU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="526"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.17254901959999999" green="0.32156862749999998" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcl-tJ-IdR">
+                    <rect key="frame" x="80" y="601" width="98" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6GX-6m-Mos"/>
+                        <constraint firstAttribute="width" constant="98" id="WiS-Ei-iDJ"/>
+                    </constraints>
+                    <state key="normal" title="Save"/>
+                    <connections>
+                        <action selector="onSave:" destination="-1" eventType="touchUpInside" id="aFJ-Gq-ekE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saP-PY-Ew7">
+                    <rect key="frame" x="197" y="601" width="98" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Xex-MM-7Mf"/>
+                        <constraint firstAttribute="width" constant="98" id="vg2-mx-xUa"/>
+                    </constraints>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="DO4-Xm-Bds"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-Tt-Gxp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="O6S-11-vG6">
+                            <rect key="frame" x="84" y="265" width="207" height="136"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="207" id="SY8-hd-zAo"/>
+                                <constraint firstAttribute="height" constant="136" id="hQO-lm-fkN"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="521715622.79621297">
+                                <!--2017-07-14 09:00:22 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="O6S-11-vG6" firstAttribute="centerX" secondItem="qAL-Tt-Gxp" secondAttribute="centerX" id="267-Y9-gvm"/>
+                        <constraint firstItem="O6S-11-vG6" firstAttribute="centerY" secondItem="qAL-Tt-Gxp" secondAttribute="centerY" id="Eky-H0-UAS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qAL-Tt-Gxp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6xX-26-AeP"/>
+                <constraint firstAttribute="bottom" secondItem="bcA-5T-uqU" secondAttribute="bottom" constant="141" id="AMu-wz-H3z"/>
+                <constraint firstItem="bcA-5T-uqU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F6c-fi-Kfb"/>
+                <constraint firstAttribute="bottom" secondItem="saP-PY-Ew7" secondAttribute="bottom" constant="26" id="LED-g7-i4k"/>
+                <constraint firstItem="qAL-Tt-Gxp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LcW-DR-5iz"/>
+                <constraint firstItem="bcA-5T-uqU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O1W-1d-VE8"/>
+                <constraint firstAttribute="trailing" secondItem="bcA-5T-uqU" secondAttribute="trailing" id="QgV-V4-cba"/>
+                <constraint firstAttribute="bottom" secondItem="qAL-Tt-Gxp" secondAttribute="bottom" id="d1D-od-soF"/>
+                <constraint firstAttribute="trailing" secondItem="qAL-Tt-Gxp" secondAttribute="trailing" id="g34-Tq-yx0"/>
+                <constraint firstAttribute="trailing" secondItem="saP-PY-Ew7" secondAttribute="trailing" constant="80" id="iDV-ae-08W"/>
+                <constraint firstItem="Bcl-tJ-IdR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="mlD-oW-z33"/>
+                <constraint firstAttribute="bottom" secondItem="Bcl-tJ-IdR" secondAttribute="bottom" constant="26" id="qWz-of-TAw"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AMu-wz-H3z"/>
+                    <exclude reference="F6c-fi-Kfb"/>
+                    <exclude reference="QgV-V4-cba"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="AMu-wz-H3z"/>
+                    <include reference="F6c-fi-Kfb"/>
+                    <include reference="QgV-V4-cba"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="430.5" y="253.5"/>
+        </view>
+    </objects>
+</document>

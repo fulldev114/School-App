@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolListViewController">
+            <connections>
+                <outlet property="searchBox" destination="zzf-Ct-xZh" id="hB5-Ug-S1Q"/>
+                <outlet property="tblSchoolList" destination="Y6t-ho-wTS" id="Cup-qd-qKH"/>
+                <outlet property="txtSearchBox" destination="Zni-Ye-VAp" id="olY-Ez-b6M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-Ye-VAp">
+                    <rect key="frame" x="8" y="70" width="359" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QIl-Me-O2R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-ho-wTS">
+                    <rect key="frame" x="0.0" y="115" width="375" height="552"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="c4c-K7-Kdn"/>
+                        <outlet property="delegate" destination="-1" id="J0y-of-T0h"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search" backgroundImage="searchBerBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="zzf-Ct-xZh">
+                    <rect key="frame" x="0.0" y="71" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="WsE-bW-zD4"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3Kx-jF-dm1"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zni-Ye-VAp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="2wP-u5-FSW"/>
+                <constraint firstAttribute="trailing" secondItem="zzf-Ct-xZh" secondAttribute="trailing" id="4ye-ID-8OE"/>
+                <constraint firstItem="Y6t-ho-wTS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Xq-IF-Xx7"/>
+                <constraint firstItem="Y6t-ho-wTS" firstAttribute="top" secondItem="Zni-Ye-VAp" secondAttribute="bottom" constant="5" id="I4f-w0-cop"/>
+                <constraint firstAttribute="trailing" secondItem="Zni-Ye-VAp" secondAttribute="trailing" constant="8" id="JLl-40-zne"/>
+                <constraint firstItem="Zni-Ye-VAp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="R84-Gs-TqY"/>
+                <constraint firstAttribute="trailing" secondItem="Y6t-ho-wTS" secondAttribute="trailing" id="UJs-bj-yTQ"/>
+                <constraint firstAttribute="bottom" secondItem="Y6t-ho-wTS" secondAttribute="bottom" id="dUu-Ex-ZkP"/>
+                <constraint firstItem="zzf-Ct-xZh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j3c-eg-tWa"/>
+                <constraint firstItem="zzf-Ct-xZh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="lcP-Pc-OmE"/>
+                <constraint firstItem="Y6t-ho-wTS" firstAttribute="top" secondItem="Zni-Ye-VAp" secondAttribute="bottom" constant="5" id="q7p-gr-zSV"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="q7p-gr-zSV"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-657" y="-540"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="searchBerBg.png" width="20" height="20"/>
+    </resources>
+</document>
